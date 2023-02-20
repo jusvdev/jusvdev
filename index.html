@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JUSV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- UI -->
+
+            <!--Head-->
+                <!--TITRE-->
+    <div class="banner-block">
+        <div class="scroll-container">
+            <div class="relative">
+                <span class="scroll-banner back">
+                    &nbsp;&sdot;&nbsp;<span>A propos</span>&nbsp;&sdot;&nbsp;<span>A propos</span>
+                </span>
+                <div class="color-block-container">
+                    <div class="color-block"></div>
+                    <span class="scroll-banner front">
+                    &nbsp;&sdot;&nbsp;<span>A propos</span>&nbsp;&sdot;&nbsp;<span>A propos</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TITRE-->
+    <!--CONTACT FORM-->
+    <div class="formdiv">
+      <div class="containerform">
+        <form action="action.php" method="post">    
+          <label for="fname">Prénom</label>
+          <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
+    
+         <label for="lname">Nom</label>
+          <input type="text" id="lname" name="lastname" placeholder="Votre nom de famille...">
+          <label for="lname">Mail</label>
+          <input type="text" id="lname" name="lastname" placeholder="exemple@exemple.alsace...">
+          <label for="country">Qui êtes vous ?</label>
+          <select id="country" name="country">
+            <option value="Rien">Choisir une option</option>
+            <option value="Ecole">Ecole</option>
+           <option value="Particulier">Particulier</option>
+            <option value="Entreprise">Entreprise</option>
+         </select>
+    
+         <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Ecrivez quelque chose..." style="height:200px"></textarea>
+    
+          <input type="submit" value="Submit">
+    </div>
+    </div>
+      </form>
+    <footer>
+        <p>© 2021 JUSV</p>
+    </footer>
+  </body>
+</html>
