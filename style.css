@@ -1,11 +1,16 @@
+@import url('https://fonts.cdnfonts.com/css/radwave-demo');
+@import url('https://fonts.cdnfonts.com/css/mollen-personal-use');
+
 body   {
     background-color: #010101;
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Radwave Demo', sans-serif;
     margin:0;
 }
+p   {
+  font-family: 'Mollen Personal Use', sans-serif;
+}
 header {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -112,20 +117,26 @@ header {
 /* DEFAUT */
 
 h1  {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
 }
 footer  {
     width: 100%;
     padding: 50px 0px 50px 0px;
     text-align: center;
-    color: #949393;
+    color: #ffffff;
     background: linear-gradient(90deg, #01016d 0%, #7a0047 100%);
 }
 .hovergray   {
-    color: #6b6b6b;
+    color: #ffffff;
     transition: 0.5s;
 }
+.blue {
+    color: #01016d;
+}
+
+
+/* contact form */
 
 .containerform .button {
     background-color: #131313;
@@ -152,7 +163,7 @@ footer  {
 .containerform input[type=text], select, textarea {
 	width: 100%; /* Full width */
 	padding: 12px; /* Some padding */ 
-	border: 1px solid #ccc; /* Gray border */
+	border: 0px solid #ccc; /* Gray border */
 	border-radius: 4px; /* Rounded borders */
 	box-sizing: border-box; /* Make sure that padding and width stays in place */
 	margin-top: 6px; /* Add a top margin */
@@ -162,8 +173,8 @@ footer  {
   
   /* Style the submit button with a specific background color etc */
   .containerform input[type=submit] {
-	background-color: #04AA6D;
-	color: white;
+    background-color: #01016d;
+	color: rgb(255, 255, 255);
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
@@ -172,15 +183,77 @@ footer  {
   
   /* When moving the mouse over the submit button, add a darker green color */
   .containerform input[type=submit]:hover {
-	background-color: #45a049;
+	background-color: #010160;
   }
   
   /* Add a background color and some padding around the form */
   .containerform {
-	border-radius: 5px;
-	background-color: #f2f2f2;
+	border-radius: 0px;
+    background-color: #131313;
 	padding: 20px;
   }
   .formdiv	{
-	margin: 50px 50px 50px 50px;
+	margin: 30px 20% 100px 20%;
+	color:rgb(255, 255, 255);
   }
+
+  
+/*SCROLL DOWN INDICATOR*/
+  .scroll-downs {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width :34px;
+    height: 55px;
+    z-index:10;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #ffffff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+  
+
+  /*SCROLL ANNIMATION APPARTITION*/
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
+  
+
+  #contact {
+    scroll-behavior: smooth;
+  }
+  
