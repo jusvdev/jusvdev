@@ -9,6 +9,12 @@ body   {
 }
 p   {
   font-family: 'Mollen Personal Use', sans-serif;
+  text-decoration: none;
+  color: #949393;
+}
+a {
+    text-decoration: none;
+    color: #949393;
 }
 header {
     top: 0;
@@ -170,6 +176,17 @@ footer  {
 	margin-bottom: 16px; /* Bottom margin */
 	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
+
+  .containerform input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 0px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
   
   /* Style the submit button with a specific background color etc */
   .containerform input[type=submit] {
@@ -252,8 +269,9 @@ footer  {
     font-size: 3em;
   }
   
-
   #contact {
     scroll-behavior: smooth;
   }
   
+/* GALLERY PROJECT */
+

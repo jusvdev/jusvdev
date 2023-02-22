@@ -223,6 +223,7 @@ p {
   color:#01016d;
   transition: 0.5s;
   border-radius: 10px;
+  margin:30px 60px 30px 60px;
 }
 
 .buttonon:hover   {
